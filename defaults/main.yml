@@ -1,0 +1,5 @@
+---
+wtd_repo_epel_enabled: true
+
+wtd_repo_epel_packages:
+  - "epel-release"

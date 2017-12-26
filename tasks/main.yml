@@ -1,0 +1,12 @@
+---
+- name: Install repository EPEL
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ wtd_repo_epel_packages }}"
+  when: wtd_repo_epel_enabled
+
+- name: Include cleanup tasks
+  include_tasks: cleanup.yml
+  when: not wtd_repo_epel_enabled

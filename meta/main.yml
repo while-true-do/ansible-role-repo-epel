@@ -1,0 +1,22 @@
+dependencies: []
+
+galaxy_info:
+  author: while-true-do.org
+  description: A role that installes yum repository for Extra Packages for Enterprise Linux (EPEL).
+  company: while-true-do.org
+
+  issue_tracker_url: https://github.com/while-true-do/ansible-role-repo-epel/issues
+  github_branch: master
+  license: BSD
+
+  min_ansible_version: 2.0
+
+  platforms:
+  - name: EL
+    versions:
+    - 7
+
+  galaxy_tags:
+    - repository
+    - yum
+    - epel
