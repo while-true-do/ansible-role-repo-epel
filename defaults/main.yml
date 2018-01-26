@@ -1,5 +1,4 @@
 ---
-wtd_repo_epel_enabled: true
-
-wtd_repo_epel_packages:
-  - "epel-release"
+# You can change the state (present|absent)
+wtd_repo_epel_state: present
+wtd_repo_epel_packages: ["epel-release"]

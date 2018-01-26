@@ -1,4 +1,4 @@
-Empty space for build-links, logos or something like this.
+[![Build Status](https://travis-ci.org/while-true-do/ansible-role-repo-epel.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-repo-epel)
 
 # Ansible Role: Repo-EPEL
 | A role that installes yum repository for Extra Packages for Enterprise Linux (EPEL).

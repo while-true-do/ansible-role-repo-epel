@@ -55,4 +55,4 @@ Please take care of the documentation. In most cases, at least the [README.md](.
 ## Testing
 
 -   **Use a linting tool** should help to avoid common typing errors or misbehaviour of your code.
--   **Use and update** the tests, that are provided in the repos. In most cases at least some syntax checking and linting should be in place. For larger projects the testing can be little bit heavier.
+-   **Use and update** the tests, that are provided in the repositories. In most cases at least some syntax checking and linting should be in place. For larger projects the testing can be little bit heavier.
