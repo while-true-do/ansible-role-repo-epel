@@ -1,4 +1,4 @@
-Empty space for build-links, logos or something like this.
+[![Build Status](https://travis-ci.org/while-true-do/ansible-role-repo-epel.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-repo-epel)
 
 # Ansible Role: Repo-EPEL
 | A role that installes yum repository for Extra Packages for Enterprise Linux (EPEL).
@@ -31,11 +31,10 @@ git clone https://github.com/while-true-do/ansible-role-repo-epel.git while-true
 
 ## Role Variables
 ```yaml
-# defaults/main.yml
-wtd_repo_epel_enabled: true
+# You can change the state (present|absent)
+wtd_repo_epel_state: present
+wtd_repo_epel_packages: ["epel-release"]
 
-wtd_repo_epel_packages:
-  - "epel-release"
 ```
 
 ## Dependencies
