@@ -3,8 +3,6 @@
 # Ansible Role: Repo-EPEL
 | A role that installs yum repository for Extra Packages for Enterprise Linux (EPEL).
 
-- If wtd_repo_epel_enabled is set to false it will remove rpm package and its repository files.
-
 ## Motivation
 
 This role is needed to get access for Extra Packages for Enterprise Linux (EPEL).
