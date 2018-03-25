@@ -1,6 +1,3 @@
-------------------
-BSD 3 Clause
-------------------
 Copyright (c) 2017, While True Do
 All rights reserved.
 
