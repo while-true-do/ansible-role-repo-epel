@@ -24,7 +24,7 @@ install:
   - ansible --version
 
   # Link github repo to ansible-galaxy name
-  - ln -s  $PWD ../while-true-do.repo-epel
+  - ln -s  $PWD ../while_true_do.repo-epel
 
 # Run the tests
 script:
