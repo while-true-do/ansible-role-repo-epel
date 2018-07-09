@@ -9,10 +9,10 @@ This role is needed to get access for Extra Packages for Enterprise Linux (EPEL)
 
 ## Installation
 
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do.repo-epel)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do.repo_epel)
 
 ```
-ansible-galaxy install while_true_do.repo-epel
+ansible-galaxy install while_true_do.repo_epel
 ```
 
 Install from [Github](https://github.com/while-true-do/ansible-role-repo-epel)
@@ -46,7 +46,7 @@ Simple Example:
 ```yaml
 - hosts: servers 
   roles:
-    - { role: while_true_do.repo-epel }
+    - { role: while_true_do.repo_epel }
 ```
 
 ## Testing
