@@ -18,7 +18,7 @@ ansible-galaxy install while_true_do.repo_epel
 Install from [Github](https://github.com/while-true-do/ansible-role-repo-epel)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-repo-epel.git while_true_do.repo-epel
+git clone https://github.com/while-true-do/ansible-role-repo-epel.git while_true_do.repo_epel
 ```
 
 ## Requirements
