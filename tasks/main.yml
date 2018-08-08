@@ -7,7 +7,7 @@
     state: "{{ wtd_repo_epel_state }}"
     enabled: yes
     gpgcheck: no
-  when: ansible_architecture == 'armv7l'
+  when: ansible_architecture == 'armv7l' and wtd_repo_epel_armhfp_confirm
 
 - name: Setting repository EPEL to "{{ wtd_repo_epel_state }}"
   package:
