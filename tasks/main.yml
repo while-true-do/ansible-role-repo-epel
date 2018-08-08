@@ -1,4 +1,12 @@
 ---
+- name: Setting armhpf EPEL repo to "{{ wtd_repo_epel_state }}"
+  yum_repository:
+    name: 'epel_armhfp'
+    description: 'Epel rebuild for armhfp'
+    baseurl: "{{ wtd_repo_epel_armhfp_baseurl }}"
+    enabled: yes
+    gpgcheck: no
+
 - name: Setting repository EPEL to "{{ wtd_repo_epel_state }}"
   package:
     name: "{{ item }}"
