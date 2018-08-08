@@ -4,8 +4,10 @@
     name: 'epel_armhfp'
     description: 'Epel rebuild for armhfp'
     baseurl: "{{ wtd_repo_epel_armhfp_baseurl }}"
+    state: "{{ wtd_repo_epel_state }}"
     enabled: yes
     gpgcheck: no
+  when: ansible_architecture == 'armv7l'
 
 - name: Setting repository EPEL to "{{ wtd_repo_epel_state }}"
   package:
@@ -13,3 +15,4 @@
     state: "{{ wtd_repo_epel_state }}"
   with_items:
     - "{{ wtd_repo_epel_packages }}"
+  when: ansible_architecture != 'armv7l'
