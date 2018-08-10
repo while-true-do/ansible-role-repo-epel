@@ -1,5 +1,5 @@
 ---
-- name: Setting armhpf EPEL repo to "{{ wtd_repo_epel_state }}"
+- name: Setting EPEL for armhfp to "{{ wtd_repo_epel_state }}"
   yum_repository:
     name: 'epel_armhfp'
     description: 'Epel rebuild for armhfp'
