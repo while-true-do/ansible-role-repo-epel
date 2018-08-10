@@ -25,7 +25,7 @@ git clone https://github.com/while-true-do/ansible-role-repo-epel.git while_true
 
 **Used Modules**
 
--   [package_module](http://docs.ansible.com/ansible/latest/package_module.html)
+-   [package_module](https://docs.ansible.com/ansible/latest/modules/package_module.html)
 
 ## Role Variables
 ```yaml
