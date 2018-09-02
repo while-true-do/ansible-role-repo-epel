@@ -3,5 +3,6 @@
   package:
     name: "{{ item }}"
     state: "{{ wtd_repo_epel_state }}"
+  become: yes
   with_items:
     - "{{ wtd_repo_epel_packages }}"
