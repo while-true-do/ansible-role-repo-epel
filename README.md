@@ -9,7 +9,7 @@ This role is needed to get access for Extra Packages for Enterprise Linux (EPEL)
 
 ## Installation
 
-**NOTE**: The armhfp repository is automatically rebuilt without any QA or tests. Please set ```wtd_repo_epel_armhfp_confirm``` to ```true```.
+**NOTE**: The armhfp repository is automatically rebuilt without any quality assurance or tests. Please set variable `wtd_repo_epel_armhfp_confirm` to `true` if you want to use this repository.
 
 Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do.repo_epel)
 
