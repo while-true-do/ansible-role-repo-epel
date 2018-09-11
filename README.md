@@ -49,7 +49,7 @@ None.
 Simple Example:
 
 ```yaml
-- hosts: servers 
+- hosts: servers
   roles:
     - { role: while_true_do.repo_epel }
 ```
@@ -61,7 +61,7 @@ All tests should be put in [test directory](./tests/).
 ## Contribute / Bugs
 
 Thank you so much for considering to contribute. Every contribution helps us.
-We are really happy, when somebody is joining the hard work. Please have a look 
+We are really happy, when somebody is joining the hard work. Please have a look
 at the links first.
 
 -   [Contribution Guidelines](./docs/CONTRIBUTING.md)
