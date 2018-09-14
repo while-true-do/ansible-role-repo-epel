@@ -1,7 +1,24 @@
 ---
+- name: Setting EPEL for armhfp to "{{ wtd_repo_epel_state }}"
+  yum_repository:
+    name: 'epel_armhfp'
+    description: 'Extra Packages for Enterprise Linux 7 rebuilt - armhfp'
+    baseurl: "{{ wtd_repo_epel_armhfp_baseurl }}"
+    state: "{{ wtd_repo_epel_state }}"
+    enabled: yes
+    gpgcheck: no
+  when: ansible_architecture == 'armv7l' and wtd_repo_epel_armhfp_confirm
+
 - name: Setting repository EPEL to "{{ wtd_repo_epel_state }}"
   package:
     name: "{{ item }}"
     state: "{{ wtd_repo_epel_state }}"
   with_items:
     - "{{ wtd_repo_epel_packages }}"
+  when: ansible_architecture != 'armv7l'
+
+- name: Activate cleanup handler
+  command: "true"
+  notify:
+    - Cleanup yum metadata
+  when: wtd_repo_epel_state != "present"

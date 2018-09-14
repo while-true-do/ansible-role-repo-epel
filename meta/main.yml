@@ -1,4 +1,5 @@
-dependencies: []
+dependencies:
+  - while_true_do.yum
 
 galaxy_info:
   role_name: repo_epel
